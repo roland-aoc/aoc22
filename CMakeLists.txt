@@ -19,7 +19,8 @@ add_executable(aoc22 ${aoc22_SRC})
 enable_testing()
 add_subdirectory(tests)
 add_subdirectory(01)
-
+add_subdirectory(02)
+ 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)

@@ -1,13 +1,13 @@
 #include <iostream>
-#include <iostream>
 
-#include "01/carrier.cpp"
+#include "02/rps.cpp" //why doesn't this compile with .h?
 
 using namespace std;
 
 int main(int, char**) {
-    Carrier i;
-    cout << "test passed: " << (45000 == i.top3("C:\\Users\\R\\Desktop\\aoc22\\01\\input01Test"))   << "\n";
-    cout << "puzzle answer: " <<          i.top3("C:\\Users\\R\\Desktop\\aoc22\\01\\input01")       << "\n";
+    RPS i;
+    cout << "test passed: " << (15 == i.play("C:\\Users\\R\\Desktop\\aoc22\\02\\inputTest"))   << "\n";
+    cout << "test result: " << i.play("C:\\Users\\R\\Desktop\\aoc22\\02\\inputTest")   << "\n";
+    cout << "puzzle answer: " <<          i.play("C:\\Users\\R\\Desktop\\aoc22\\02\\input")       << "\n";
     return 0;
 }
