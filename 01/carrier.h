@@ -13,6 +13,8 @@ public:
     Carrier(/* args */);
     ~Carrier();
     int largestCarry(string);
+    int top3(string);
+    void sumCarry(vector<int>& carry, string path);
 };
 
 #endif
